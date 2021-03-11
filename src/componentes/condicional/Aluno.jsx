@@ -50,6 +50,7 @@ export default props => {
             console.log("Objetos: ", objetos)
         }
         getPlan()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
