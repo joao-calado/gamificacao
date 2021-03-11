@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+// eslint-disable-next-line no-unused-vars
 import Card from './componentes/layout/Card'
 
 import Aluno from './componentes/condicional/Aluno'
