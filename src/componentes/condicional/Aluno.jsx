@@ -50,14 +50,14 @@ export default props => {
             console.log("Objetos: ", objetos)
         }
         getPlan()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
         <div>
             {
                 alunos.map((aluno, index) =>
-                    <Card cor={cores[parseInt(Math.random() * (8 - 0)) + 0]} >
+                    < Card cor={cores[parseInt(Math.random() * (8 - 0)) + 0]} key={index} >
                         <ul>
                             Nome: <strong>{aluno.nome} </strong>
                             Pontos: <strong>{aluno.pontos}</strong>
@@ -65,6 +65,6 @@ export default props => {
                     </Card>
                 )
             }
-        </div>
+        </div >
     )
 }
